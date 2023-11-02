@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu-bar">
+            <ul>
+                <li class="active"><a href="AnaSayfa.html"><i class="fas fa-home"> </i>Ana Sayfa </a></li>
+                <li><a href="GirişYapma.html"><i class="fas fa-sign-in"> </i>Giriş Yapma </a></li>
+                <li><a href="KayitOlma.html"><i class="fas fa-user-plus"> </i>Kayıt Olma </a></li>
+                <li><a href="Profil.html"><i class="fas fa-user" ></i>Profil </a></li>
+                <li><a href="Hakkimizda.html"><i class="fas fa-sort-amount-desc"> </i>Hakkımızda </a>
+                              <div class="sub-menu-4">
+                                <ul>
+                                    <li><a href="#">Yardım</a></li>
+                                    <li><a href="#">İletişim</a></li>
+                                    <li><a href="#">Bilgilendirme</a></li>
+                                    <li><a href="#">Gizlilik Sözleşmesi</a></li>
+                                </ul>
+                              </div>
+                </li>
+            </ul>
+        </div>
+    </header> 
+
+    <div class="container">
+        <form action="kayit.php" method="post">
+            <h2>Kayıt Ol</h2>
+            <label for="fullname"> Ad Soyad:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="email"> E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password"> Şifre:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Kayıt Ol</button>
+            <p>Zaten hesabınız var mı? <a href="GirişYapma.html"> Giriş Yapın</a></p>
+
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Gizlilik</h4>
+                    <ul>
+                        <li><a href="#">Bize bildirin </a></li>
+                        <li><a href="#"> Şikayette bulun</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Üyelik Sözleşmesi</h4>
+                    <ul>
+                        <li><a href="#">tıkla </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                    
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

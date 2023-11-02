@@ -1,0 +1,290 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 600px;
+    margin:  auto;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+
+}
+
+#imgtourl{
+    font-size:x-large;
+    margin: 0 400px 0 0;
+}
+
+form {
+    padding: 0 20px 0 0;
+}
+
+h2 {
+    color: #333;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 80%;
+    }
+}
+
+/* Anasayfa Css Kodları Başlangıç 
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.navbar a {
+    color: #f4f4f4;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}*/
+
+.menu-bar{
+    background: #283618;
+    text-align: center ;
+    
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+
+
+}
+
+.menu-bar ul li{
+    width: 95px;
+    margin: 12px;
+    padding: 10px ;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #d4c995;
+    border-radius: 10px;
+}
+.menu-bar .fas{
+    margin-right: 8px;
+}
+.sub-menu-4{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-4{
+    display: block;
+    position: absolute;
+    background: #283618;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-4 ul{
+    display: block;
+    
+}
+.menu-bar ul li:hover .sub-menu-4 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    cursor:pointer;
+
+}
+.menu-bar ul li:hover .sub-menu-4 ul li a:hover{
+    color: #b2ff00;
+}
+
+
+
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    background: #283618;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.container{
+    max-width: 15000px;
+    background-color: #283618;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    background-color: #283618;
+    padding: 2px ;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px ;
+}
+.footer-col h4{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.footer-colh4::before{
+
+    content: '' ;
+    position: absolute;
+    left:0 ;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(last-child){
+    margin-bottom: 10px; 
+}
+.footer-col ul li a{
+    font-size:15px ;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 20px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 5px 5px 0;
+    text-align:  center;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: 24262b;
+    background-color:#ffffff ;
+}
+@media(max-width: 767px){
+    .footer-col {
+        width: 25%;
+        margin-bottom:30px ;
+    }
+}
+
+#dropArea {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileLabel {
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+/* Anasayfa Css Kodları Bitiş */
